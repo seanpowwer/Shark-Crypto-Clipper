@@ -6,6 +6,12 @@
 
 # The first thing you agree with using this tool is that I do not bear any responsibility for your subsequent actions, if you are not sure about something, then do not take this job.
 
+The first thing you should do is check the keys
+
+The password / key you entered at login must match the builder key
+
+If your login key and builder don't match you won't get a connection
+
 # If you find errors, if you can't compile the project, then write questions, I will answer you
 ![Screenshot_3](https://user-images.githubusercontent.com/118846831/211919735-f3279ab1-90d4-49cc-9d6f-98aba1fcf9cb.png)
 ![Screenshot_4](https://user-images.githubusercontent.com/118846831/211919828-4e99b51c-7e74-415b-b746-a793fdf8a194.png)
