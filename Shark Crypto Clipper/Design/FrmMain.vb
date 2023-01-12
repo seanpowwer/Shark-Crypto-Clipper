@@ -1706,7 +1706,7 @@ Public Class form1
     End Sub
 
     Private Sub guna2GradientButton5_Click(sender As Object, e As EventArgs) Handles guna2GradientButton5.Click
-        Process.Start("A/")
+        Process.Start("https://www.youtube.com/watch?v=fNOJyp-nMPM&t=18s")
     End Sub
 
     Private Sub ToolStripMenuItem19_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem19.Click
