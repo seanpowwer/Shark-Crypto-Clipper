@@ -269,8 +269,10 @@ Public Class FrmBuilder
             Catch ex As Exception
             End Try
             GC.Collect()
-            Dim float2 As String = "Builded" & " - " & Path
-            Guna2MessageDialog1.Show(float2)
+            Dim strong2 As String = "Builded"
+            Dim long2 As String = " - "
+            Dim loat3 As Boolean = Path
+            Guna2MessageDialog1.Show(strong2 & long2 & loat3)
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
@@ -498,5 +500,13 @@ Public Class FrmBuilder
     Private Sub Guna2Panel2_MouseDown(sender As Object, e As MouseEventArgs) Handles Guna2Panel2.MouseDown
         ReleaseCapture()
         SendMessage(Handle, &H112, &HF012, 0)
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.Warning
+        Dim fyt As String = "The password must match the password that you entered in the login form If the cell with the password 
+is empty you will only receive a connection on the local host 
+because this password serves as a stop key between you and the infected client"
+        Guna2MessageDialog1.Show(fyt)
     End Sub
 End Class

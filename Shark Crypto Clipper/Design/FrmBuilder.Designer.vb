@@ -64,6 +64,7 @@ Partial Class FrmBuilder
         Me.guna2Transition3 = New Guna.UI2.WinForms.Guna2Transition()
         Me.guna2Transition4 = New Guna.UI2.WinForms.Guna2Transition()
         Me.Guna2MessageDialog1 = New Guna.UI2.WinForms.Guna2MessageDialog()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.guna2ContextMenuStrip2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.guna2TabControl1.SuspendLayout()
@@ -72,6 +73,7 @@ Partial Class FrmBuilder
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.guna2GroupBox1.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'guna2ContextMenuStrip2
@@ -194,6 +196,7 @@ Partial Class FrmBuilder
         '
         Me.Guna2GroupBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Guna2GroupBox6.BorderColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.Guna2GroupBox6.Controls.Add(Me.PictureBox2)
         Me.Guna2GroupBox6.Controls.Add(Me.Button1)
         Me.Guna2GroupBox6.Controls.Add(Me.PictureBox1)
         Me.Guna2GroupBox6.Controls.Add(Me.CheckBox3)
@@ -827,7 +830,21 @@ Partial Class FrmBuilder
         Me.Guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark
         Me.Guna2MessageDialog1.Text = Nothing
         '
-        'fBuilderBot
+        'PictureBox2
+        '
+        Me.guna2Transition3.SetDecoration(Me.PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.guna2Transition1.SetDecoration(Me.PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.guna2Transition2.SetDecoration(Me.PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.guna2Transition4.SetDecoration(Me.PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.PictureBox2.Image = Global.CryptoShark.My.Resources.Resources.icons8_error_48
+        Me.PictureBox2.Location = New System.Drawing.Point(597, 192)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(38, 36)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 161
+        Me.PictureBox2.TabStop = False
+        '
+        'FrmBuilder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -843,7 +860,7 @@ Partial Class FrmBuilder
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.Name = "fBuilderBot"
+        Me.Name = "FrmBuilder"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Builder"
         Me.guna2ContextMenuStrip2.ResumeLayout(False)
@@ -856,6 +873,7 @@ Partial Class FrmBuilder
         Me.guna2GroupBox1.ResumeLayout(False)
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel2.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -895,4 +913,5 @@ Partial Class FrmBuilder
     Private WithEvents guna2ControlBox3 As Guna.UI2.WinForms.Guna2ControlBox
     Private WithEvents guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2MessageDialog1 As Guna.UI2.WinForms.Guna2MessageDialog
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

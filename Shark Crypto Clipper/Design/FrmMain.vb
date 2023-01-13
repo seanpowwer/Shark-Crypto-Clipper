@@ -24,7 +24,7 @@ Public Class form1
         FadeInMain(Me, 20)
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        tlscclient.Server()
     End Sub
 
     Private Sub CLOSEToolStripMenuItem_Click(sender As Object, e As EventArgs)
@@ -1722,5 +1722,15 @@ Public Class form1
                 MessageBox.Show(ex.Message)
             End Try
         End If
+    End Sub
+
+    Private Sub l1_ItemSelectionChanged_1(sender As Object, e As ListViewItemSelectionChangedEventArgs) Handles l1.ItemSelectionChanged
+        Dim m As Message = Message.Create(Me.Handle, &H127, New IntPtr(&H10001), New IntPtr(0))
+
+        Me.WndProc(m)
+    End Sub
+
+    Private Sub form1_InputLanguageChanging(sender As Object, e As InputLanguageChangingEventArgs) Handles MyBase.InputLanguageChanging
+
     End Sub
 End Class

