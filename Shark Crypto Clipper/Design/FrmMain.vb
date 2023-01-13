@@ -11,7 +11,6 @@ Imports Microsoft.VisualBasic.CompilerServices
 Imports System.Text
 Imports System.CodeDom.Compiler
 Imports System.Net.Sockets
-Imports ClipBanker
 
 Public Class form1
     Public S As Server
