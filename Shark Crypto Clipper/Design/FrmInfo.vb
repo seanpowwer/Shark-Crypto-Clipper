@@ -13,7 +13,7 @@ Public Class FrmInfo
         Try
             TextBox1.Clear()
             ToolStripStatusLabel1.ForeColor = Color.White
-            ToolStripStatusLabel1.Text = "Information..."  '' Receiving the information
+            ToolStripStatusLabel1.Text = "Information.."  '' Receiving the information
             B = SB("Xinfo" & Gclass1.SPL & Convert.ToBase64String(File.ReadAllBytes("data\cpp\class37.plg")))
 
         Catch ex As Exception
