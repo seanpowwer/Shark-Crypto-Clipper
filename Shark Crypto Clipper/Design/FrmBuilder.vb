@@ -271,7 +271,7 @@ Public Class FrmBuilder
             GC.Collect()
             Dim strong2 As String = "Builded"
             Dim long2 As String = " - "
-            Dim loat3 As Boolean = Path
+            Dim loat3 As String = Path
             Guna2MessageDialog1.Show(strong2 & long2 & loat3)
         Catch ex As Exception
             MessageBox.Show(ex.Message)
