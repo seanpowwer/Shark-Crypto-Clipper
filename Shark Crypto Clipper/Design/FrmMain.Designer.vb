@@ -64,6 +64,7 @@ Partial Class form1
         Me.toolStripMenuItem65 = New System.Windows.Forms.ToolStripMenuItem()
         Me.toolStripMenuItem66 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem16 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.toolStripMenuItem67 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem17 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem19 = New System.Windows.Forms.ToolStripMenuItem()
@@ -877,7 +878,7 @@ Partial Class form1
         Me.guna2ContextMenuStrip2.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(38, Byte), Integer))
         Me.guna2ContextMenuStrip2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
         Me.guna2ContextMenuStrip2.ImageScalingSize = New System.Drawing.Size(29, 29)
-        Me.guna2ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem15, Me.ToolStripMenuItem3, Me.toolStripMenuItem62, Me.toolStripMenuItem63, Me.toolStripMenuItem64, Me.toolStripMenuItem65, Me.toolStripMenuItem66, Me.ToolStripMenuItem16, Me.toolStripMenuItem67, Me.ToolStripMenuItem17, Me.ToolStripMenuItem10, Me.ToolStripMenuItem4})
+        Me.guna2ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem15, Me.ToolStripMenuItem3, Me.toolStripMenuItem62, Me.toolStripMenuItem63, Me.toolStripMenuItem64, Me.toolStripMenuItem65, Me.toolStripMenuItem66, Me.ToolStripMenuItem16, Me.ToolStripMenuItem1, Me.toolStripMenuItem67, Me.ToolStripMenuItem17, Me.ToolStripMenuItem10, Me.ToolStripMenuItem4})
         Me.guna2ContextMenuStrip2.Margin = New System.Windows.Forms.Padding(3)
         Me.guna2ContextMenuStrip2.Name = "guna2ContextMenuStrip1"
         Me.guna2ContextMenuStrip2.RenderStyle.ArrowColor = System.Drawing.Color.Cyan
@@ -889,7 +890,7 @@ Partial Class form1
         Me.guna2ContextMenuStrip2.RenderStyle.SelectionForeColor = System.Drawing.Color.White
         Me.guna2ContextMenuStrip2.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro
         Me.guna2ContextMenuStrip2.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault
-        Me.guna2ContextMenuStrip2.Size = New System.Drawing.Size(259, 436)
+        Me.guna2ContextMenuStrip2.Size = New System.Drawing.Size(259, 472)
         '
         'ToolStripMenuItem15
         '
@@ -968,6 +969,15 @@ Partial Class form1
         Me.ToolStripMenuItem16.Size = New System.Drawing.Size(258, 36)
         Me.ToolStripMenuItem16.Text = "     DogeCoin (Doge)"
         Me.ToolStripMenuItem16.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.ForeColor = System.Drawing.Color.LightGray
+        Me.ToolStripMenuItem1.Image = Global.CryptoShark.My.Resources.Resources._3305879_removebg_preview
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(258, 36)
+        Me.ToolStripMenuItem1.Text = "     Dash Coin (Dash)"
+        Me.ToolStripMenuItem1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'toolStripMenuItem67
         '
@@ -1451,4 +1461,5 @@ Partial Class form1
     Private WithEvents guna2GradientButton3 As Guna.UI2.WinForms.Guna2GradientButton
     Private WithEvents guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents ToolStripMenuItem19 As ToolStripMenuItem
+    Private WithEvents ToolStripMenuItem1 As ToolStripMenuItem
 End Class

