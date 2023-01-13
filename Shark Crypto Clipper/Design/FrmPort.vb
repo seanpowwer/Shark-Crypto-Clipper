@@ -38,8 +38,9 @@ Public Class FrmPort
         Catch ex As Exception
             Debug.WriteLine(ex.Message)
         End Try
+        tlscclient.BeginConnect()
         Try
-            tlscclient.BeginConnect()
+
             If My.Computer.Registry.GetValue("HKEY_CURRENT_USER\SOFTWARE\CryptoShark", "Port", Nothing) = Nothing Then
                 TextBox1.Text = "9049"
             Else

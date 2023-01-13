@@ -23,7 +23,7 @@ Public Class form1
         FadeInMain(Me, 20)
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        tlscclient.Server()
+
     End Sub
 
     Private Sub CLOSEToolStripMenuItem_Click(sender As Object, e As EventArgs)
