@@ -269,10 +269,8 @@ Public Class FrmBuilder
             Catch ex As Exception
             End Try
             GC.Collect()
-            Dim strong2 As String = "Builded"
-            Dim long2 As String = " - "
-            Dim loat3 As String = Path
-            Guna2MessageDialog1.Show(strong2 & long2 & loat3)
+            Dim float2 As String = "Builded - "
+            Guna2MessageDialog1.Show(float2 & Path)
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
